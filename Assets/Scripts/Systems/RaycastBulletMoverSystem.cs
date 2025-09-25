@@ -31,6 +31,9 @@ partial struct RaycastBulletMoverSystem : ISystem {
     factionLookup = state.GetComponentLookup<Faction>(true);
     randomWalkingLookup = state.GetComponentLookup<RandomWalking>();
     localTransformLookup = state.GetComponentLookup<LocalTransform>(true);
+
+    state.RequireForUpdate<PhysicsWorldSingleton>();
+    state.RequireForUpdate<EndSimulationEntityCommandBufferSystem.Singleton>();
   }
 
   [BurstCompile]

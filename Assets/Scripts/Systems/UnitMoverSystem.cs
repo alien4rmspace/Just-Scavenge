@@ -63,7 +63,7 @@ public partial struct UnitMoverJobUpdated : IJobEntity {
     if (shootAttackComponentLookup.HasComponent(entity)) {
       RefRW<ShootAttack> shootAttack = shootAttackComponentLookup.GetRefRW(entity);
       // Condition check if aim timer has not already been resetted.
-      if (shootAttack.ValueRO.aimTimer == shootAttack.ValueRO.aimTimerMax) {
+      if (shootAttack.ValueRO.aimTimer != shootAttack.ValueRO.aimTimerMax) {
         shootAttack.ValueRW.aimTimer = shootAttack.ValueRW.aimTimerMax;
       }
     }

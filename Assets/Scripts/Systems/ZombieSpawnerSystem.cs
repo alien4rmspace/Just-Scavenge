@@ -7,6 +7,7 @@ partial struct ZombieSpawnerSystem : ISystem {
   [BurstCompile]
   public void OnCreate(ref SystemState state) {
     state.RequireForUpdate<EntitiesReferences>();
+    state.RequireForUpdate<EndSimulationEntityCommandBufferSystem.Singleton>();
   }
 
   [BurstCompile]

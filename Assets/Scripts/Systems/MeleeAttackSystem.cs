@@ -6,7 +6,11 @@ using Unity.Physics;
 using Unity.Transforms;
 
 partial struct MeleeAttackSystem : ISystem {
-
+  [BurstCompile]
+  public void OnCreate(ref SystemState state)
+  {
+    state.RequireForUpdate<PhysicsWorldSingleton>();
+  }
 
   [BurstCompile]
   public void OnUpdate(ref SystemState state) {

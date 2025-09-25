@@ -13,7 +13,9 @@ partial struct FindTargetSystem : ISystem {
   private ComponentLookup<Faction> factionLookup;
 
   [BurstCompile]
-  public void OnCreate(ref SystemState state) {
+  public void OnCreate(ref SystemState state)
+  {
+    state.RequireForUpdate<PhysicsWorldSingleton>();
     localTransformLookup = state.GetComponentLookup<LocalTransform>(true);
     unitLookup = state.GetComponentLookup<Unit>(true);
     factionLookup = state.GetComponentLookup<Faction>(true);
@@ -24,7 +26,7 @@ partial struct FindTargetSystem : ISystem {
     localTransformLookup.Update(ref state);
     unitLookup.Update(ref state);
     factionLookup.Update(ref state);
-
+    
     PhysicsWorldSingleton physicsWorldSingleton = SystemAPI.GetSingleton<PhysicsWorldSingleton>();
     CollisionWorld collisionWorld = physicsWorldSingleton.CollisionWorld;
     float deltaTime = SystemAPI.Time.DeltaTime;

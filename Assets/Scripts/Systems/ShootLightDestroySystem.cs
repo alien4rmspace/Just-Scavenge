@@ -3,6 +3,11 @@ using Unity.Entities;
 
 partial struct ShootLightDestroySystem : ISystem {
   [BurstCompile]
+  public void OnCreate(ref SystemState state)
+  {
+    state.RequireForUpdate<EndSimulationEntityCommandBufferSystem.Singleton>();
+  }
+  [BurstCompile]
   public void OnUpdate(ref SystemState state) {
     EntityCommandBuffer entityCommandBuffer = 
       SystemAPI.GetSingleton<EndSimulationEntityCommandBufferSystem.Singleton>().CreateCommandBuffer(state.WorldUnmanaged);

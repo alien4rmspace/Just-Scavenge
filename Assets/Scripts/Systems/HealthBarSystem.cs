@@ -93,7 +93,7 @@ public partial struct HealthBarJob : IJobEntity {
   public void Execute(in HealthBar healthBar, Entity entity) {
     RefRW<LocalTransform> localTransform = localTransformComponentLookup.GetRefRW(entity);
     LocalTransform parentLocalTransform = localTransformComponentLookup[healthBar.healthEntity];
-    if (localTransform.ValueRO.Scale == 1f) {
+    if (localTransform.ValueRO.Scale >= 0.9999f) {
       // Health bar is visible
       localTransform.ValueRW.Rotation = parentLocalTransform.InverseTransformRotation(quaternion.LookRotation(cameraForward, math.up()));
     }
@@ -106,7 +106,7 @@ public partial struct HealthBarJob : IJobEntity {
 
     float healthNormalized = (float)health.healthAmount / health.healthAmountMax;
 
-    if (healthNormalized == 1f) {
+    if (healthNormalized >= 0.9999f) {
       localTransform.ValueRW.Scale = 0f;
     } else {
       localTransform.ValueRW.Scale = 1f;

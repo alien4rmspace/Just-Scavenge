@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 9496eced063f387478471c37723ad099
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 298480
+  packageName: Rukhanka Animation System 2
+  packageVersion: 2.3.0
+  assetPath: Assets/Samples/Rukhanka Animation System 2/2.2.1/Rukhanka Animation
+    Samples/Scripts/UI/UILabelSetter_AnimationCulling.cs
+  uploadId: 787678

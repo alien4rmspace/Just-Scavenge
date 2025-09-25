@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 407bc68d299748449bbf7f48ee690f8d
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 298480
+  packageName: Rukhanka Animation System 2
+  packageVersion: 2.3.0
+  assetPath: Assets/Samples/Rukhanka Animation System 2/2.2.1/Rukhanka Animation
+    Samples/TextMesh Pro/Shaders/TMPro.cginc
+  uploadId: 787678

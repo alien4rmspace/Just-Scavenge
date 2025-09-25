@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: d82c1b31c7e74239bff1220585707d2b
+timeCreated: 1425440388
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 298480
+  packageName: Rukhanka Animation System 2
+  packageVersion: 2.3.0
+  assetPath: Assets/Samples/Rukhanka Animation System 2/2.2.1/Rukhanka Animation
+    Samples/TextMesh Pro/Resources/LineBreaking Leading Characters.txt
+  uploadId: 787678

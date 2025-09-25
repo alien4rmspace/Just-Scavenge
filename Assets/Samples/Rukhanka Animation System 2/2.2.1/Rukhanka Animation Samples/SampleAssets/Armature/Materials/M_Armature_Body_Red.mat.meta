@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 8d34d6fae9928aa4d914c59768e2a488
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 298480
+  packageName: Rukhanka Animation System 2
+  packageVersion: 2.3.0
+  assetPath: Assets/Samples/Rukhanka Animation System 2/2.2.1/Rukhanka Animation
+    Samples/SampleAssets/Armature/Materials/M_Armature_Body_Red.mat
+  uploadId: 787678

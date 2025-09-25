@@ -97,3 +97,48 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+
+# Visual Studio and .NET specific files
+.vs/
+bin/
+obj/
+*.suo
+*.user
+*.userprefs
+*.log
+*.pdb
+*.pidb
+*.vshost.exe
+*.vshost.exe.config
+*.resharper
+*.bak
+*.cache
+*.sdf
+*.opensdf
+*.docstates
+*.tlog
+*.testrunconfig
+*.trx
+
+# Package Manager files
+packages/
+*.nupkg
+project.lock.json
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+
+# User-specific files
+_ReSharper.*/
+*.DotSettings.user
+*.DotSettings
+
+# Rider specific files
+.idea/
+*.sln.iml
+
+# Miscellaneous
+Thumbs.db
+ehthumbs.db
+Desktop.ini

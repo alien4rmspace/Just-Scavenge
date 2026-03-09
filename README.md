@@ -1,6 +1,7 @@
 # Zombie RTS / Looter Shooter (Unity DOTS)
 
 A high-performance multiplayer zombie game built using Unity DOTS/ECS, focused on scalability, server authority, and deterministic combat.
+This project is separate from the multiplayer version of the project, which remains private.
 
 
 
